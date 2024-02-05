@@ -859,7 +859,7 @@ class _PinCodeTextFieldState extends State<PinCodeTextField>
                               _showPasteDialog(data.text!);
                             }
                           } else {
-                            _showPasteDialog(data!.text!);
+                            _textEditingController!.text = data!.text!;
                           }
                         }
                       }
